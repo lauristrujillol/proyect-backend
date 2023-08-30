@@ -1,0 +1,1 @@
+[{"title":"Mantequilla de maní","description":"Mantequilla de maní 100% Natural","price":25500,"image":"imagen1","code":"ref0253","stock":5,"id":1},{"title":"Tortillas de harina de coco","description":"Tortillas veganas con ingredientes 100% naturales","price":10000,"image":"imagen3","code":"ref0255","stock":8,"id":3}]
