@@ -68,10 +68,15 @@ class ProductManager {
         console.log("Producto eliminado")
     };
 
-    updateProducts = async (producto) => {
-        console.log(producto)
+    updateProducts = async ({id, ...producto}) => {
+        await this.deleteProductsById(id);
+        let productOld = await this.readProducts()
+        
+        let productModif = [{...producto, id}, ...productOld];
+        await fs.writeFile(this.patch, JSON.stringify(productModif));
 
-    }
+
+    };
 }
 
 const productos = new ProductManager
